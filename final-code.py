@@ -7,6 +7,7 @@ from PIL import Image
 import PIL.ImageOps   
 import sys 
 
+## For the website. All website files with the website folder
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
@@ -23,6 +24,7 @@ class info(db.Model):
 	rate = db.Column(db.Integer)
 	amount = db.Column(db.Integer)
 
+## Actual OCR part starts
 if len(sys.argv) != 2:
     print "Please exwcute as : python %s input_file_name \n" % (sys.argv[0])
     sys.exit()
