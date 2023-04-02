@@ -15,13 +15,26 @@ The image is then subjected to the following steps
 The final image will contain simple black text upon a white background which can be easily identified by the OCR.
 The output from the OCR is passed to the database to lookup the type of vehicle and the subsequent toll fee is applied against the number.
 
-Pre - Requisites
+## Setup
 
-1. Python 
-2. OpenCV
-3. Ubuntu ImageOps Repo
-4. SQLite Support
+To create the virtual env
+```
+python3 -m venv env
+```
 
-This project was done on a Raspberry Pi. 
+Activate the virtual env
+```
+source env/bin/activate
+```
 
-Complete details avaible in the Project Report.
+Install dependencies
+```
+pip install -r requirements.txt
+```
+
+To deactive the virtual env
+```
+deactivate
+```
+
+
